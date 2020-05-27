@@ -1,6 +1,8 @@
+import * as actionType from '../actions/actionTypes';
+
 const isLoggedReducer = (state = false, action) => {
     switch(action.type) {
-        case 'SIGN_IN':
+        case actionType.SIGN_UP:
             return state = !state;  
         default:
             return state;  

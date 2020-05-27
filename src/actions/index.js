@@ -1,18 +1,20 @@
+import * as actionType from './actionTypes';
+
 export const increment = (num) => {
     return {
-        type: 'INCREMENT',
+        type: actionType.INCREMENT,
         payload: num
     }
 };
 
 export const decrement = (num) => {
     return {
-        type: 'DECREMENT'
+        type: actionType.DECREMENT
     }
 };
 
 export const toggleLoggedStatus = () => {
     return {
-        type: 'SIGN_IN'
+        type: actionType.SIGN_UP
     };
 };
